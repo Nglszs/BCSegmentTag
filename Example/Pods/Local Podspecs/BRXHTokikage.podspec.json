@@ -1,0 +1,28 @@
+{
+  "name": "BRXHTokikage",
+  "version": "0.1.0",
+  "summary": "A short description of BRXHTokikage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Nglszs/BRXHTokikage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Nglszs": "1458583930@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/Nglszs/BRXHTokikage.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BRXHTokikage/Classes/**/*",
+  "resource_bundles": {
+    "BRXHTokikage": [
+      "BRXHTokikage/Assets/**/*.png"
+    ]
+  },
+  "prefix_header_contents": "#define EXBundleImageNamed(A) [UIImage imageNamed:A inBundle:[NSBundle bundleWithURL:[[NSBundle bundleForClass:self.class] URLForResource:@\"BRXHTokikage\" withExtension:@\"bundle\"]] compatibleWithTraitCollection:nil]\n#define EXBundleName [NSBundle bundleWithURL:[[NSBundle bundleForClass:self.class] URLForResource:@\"BRXHTokikage\" withExtension:@\"bundle\"]]\n#import \"BRXHBasis.h\""
+}

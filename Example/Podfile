@@ -1,0 +1,9 @@
+#use_frameworks!
+
+target 'BRXHTokikage_Example' do
+  pod 'BRXHTokikage', :path => '../'
+
+pod 'BRXHBasis', :git => 'https://gitee.com/BaiRuiXingHong/BRXHBasis.git'
+
+
+end

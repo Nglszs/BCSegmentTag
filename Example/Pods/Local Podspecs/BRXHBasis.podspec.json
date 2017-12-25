@@ -1,0 +1,118 @@
+{
+  "name": "BRXHBasis",
+  "version": "0.0.3",
+  "summary": "主框架基础组件",
+  "homepage": "https://github.com/BRXH/BRXHBasis",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "BRXH": "442756351@qq.com"
+  },
+  "source": {
+    "git": "https://gitee.com/BaiRuiXingHong/BRXHBasis.git",
+    "tag": "0.0.3"
+  },
+  "social_media_url": "http://www.jianshu.com/u/aea4ce134ab6",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0"
+  },
+  "public_header_files": "BRXHBasis/Classes/*.{h}",
+  "source_files": "BRXHBasis/Classes/*.{h}",
+  "resource_bundles": {
+    "BRXHBasis": [
+      "BRXHBasis/Assets/**/*.{png,jpg}",
+      "BRXHBasis/Classes/**/*.{xib}"
+    ]
+  },
+  "prefix_header_contents": "#define BSBundleImageNamed(A) [UIImage imageNamed:A inBundle:[NSBundle bundleWithURL:[[NSBundle bundleForClass:self.class] URLForResource:@\"BRXHBasis\" withExtension:@\"bundle\"]] compatibleWithTraitCollection:nil]\n#define BSBundleName [NSBundle bundleWithURL:[[NSBundle bundleForClass:self.class] URLForResource:@\"BRXHBasis\" withExtension:@\"bundle\"]]\n#import \"BRXHBasis.h\"",
+  "frameworks": "CoreLocation",
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "SDWebImage": [
+      "~>3.8"
+    ],
+    "MBProgressHUD": [
+
+    ],
+    "Masonry": [
+
+    ],
+    "JLRoutes": [
+
+    ],
+    "ReactiveObjC": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "MJExtension": [
+
+    ],
+    "SDAutoLayout": [
+
+    ],
+    "ZFPlayer": [
+
+    ],
+    "BlocksKit": [
+
+    ],
+    "KSPhotoBrowser": [
+
+    ],
+    "IQKeyboardManager": [
+
+    ],
+    "SDCycleScrollView": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Category",
+      "source_files": "BRXHBasis/Classes/Category/**/*.{h,m}",
+      "public_header_files": "BRXHBasis/Classes/Category/**/*.{h}"
+    },
+    {
+      "name": "Controller",
+      "source_files": "BRXHBasis/Classes/Controller/**/*.{h,m}",
+      "public_header_files": "BRXHBasis/Classes/Controller/**/*.{h}"
+    },
+    {
+      "name": "Networking",
+      "source_files": "BRXHBasis/Classes/Networking/**/*.{h,m}",
+      "public_header_files": "BRXHBasis/Classes/Networking/**/*.{h}"
+    },
+    {
+      "name": "Common",
+      "source_files": "BRXHBasis/Classes/Common/**/*.{h,m}",
+      "public_header_files": "BRXHBasis/Classes/Common/**/*.{h}"
+    },
+    {
+      "name": "UserInfoModel",
+      "source_files": "BRXHBasis/Classes/UserInfoModel/**/*.{h,m}",
+      "public_header_files": "BRXHBasis/Classes/UserInfoModel/**/*.{h}"
+    },
+    {
+      "name": "Lib",
+      "source_files": "BRXHBasis/Classes/Lib/**/*.{h,m}",
+      "public_header_files": "BRXHBasis/Classes/Lib/**/**/*.{h}"
+    },
+    {
+      "name": "Demo",
+      "source_files": "BRXHBasis/Classes/Demo/**/*.{h,m}",
+      "public_header_files": "BRXHBasis/Classes/Demo/**/*.{h}"
+    },
+    {
+      "name": "Keychain",
+      "source_files": "BRXHBasis/Classes/Keychain/**/*.{h,m}",
+      "public_header_files": "BRXHBasis/Classes/Keychain/**/*.{h}"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+framework module BRXHBasis {
+  umbrella header "BRXHBasis-umbrella.h"
+
+  export *
+  module * { export * }
+}

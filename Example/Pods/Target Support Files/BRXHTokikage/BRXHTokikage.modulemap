@@ -1,0 +1,6 @@
+framework module BRXHTokikage {
+  umbrella header "BRXHTokikage-umbrella.h"
+
+  export *
+  module * { export * }
+}
