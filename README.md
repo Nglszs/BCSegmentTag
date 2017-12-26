@@ -9,10 +9,8 @@
 
 
 
-      一、是scrollveiw/colletionview/tableview添加对应的view
-        
-        
-        
+     一、是scrollveiw/colletionview/tableview添加对应的view
+      
         
      二、是调用UIViewcontroller 自带的addChildViewController
         
