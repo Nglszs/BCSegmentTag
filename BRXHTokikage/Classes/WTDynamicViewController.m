@@ -24,7 +24,6 @@
 @property (nonatomic, assign) NSInteger pageIndex;
 @property (nonatomic, strong) BCSegmentTagView *segementView;//标签栏
 
-@property (nonatomic, strong) NSArray *vcArr;//重用池
 @property (nonatomic, strong) NSArray *arr;//暂时的数据
 @end
 
@@ -37,8 +36,7 @@
     self.navigationItem.title = BRXHLocalString(@"WTDynamicTitle");
     
     
-    //重用时调用
-    _vcArr = @[[WTContentViewController new],[WTContentViewController new],[WTContentViewController new]];
+
    
      _arr = @[@"第一",@"第二",@"第三",@"第四",@"第五",@"第六",@"第七",@"第八",@"第九",@"第十"];
     
@@ -130,10 +128,9 @@
 #pragma mark 开启重用并返回对应的controller并添加数据
 - (UIViewController *)viewControllerForIndex:(NSInteger)index {
     
-    //这里开启重用
-    WTContentViewController *contentVC = [_vcArr objectAtIndex:index%3];
+    //pageviewcontoller会自动释放之前的vc，所以不用重用，每次都创建新的vc就可以了
+    WTContentViewController *contentVC = [[WTContentViewController alloc] init];
     contentVC.content = [self.arr objectAtIndex:index];
-    [contentVC.dynamicCollectView reloadData];
     return contentVC;
 }
 
