@@ -4,7 +4,12 @@
 
 
 2.左右滑动切换视图有两种常用的做法：
-        一、是scrollveiw/colletionview/tableview添加对应的view
+
+
+
+
+
+      一、是scrollveiw/colletionview/tableview添加对应的view
         
         
         
