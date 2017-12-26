@@ -9,10 +9,9 @@
 
 
 
-     一、是scrollveiw/colletionview/tableview添加对应的view
+     一、scrollveiw/colletionview/tableview添加对应的view
       
-        
-     二、是调用UIViewcontroller 自带的addChildViewController
+     二、调用UIViewcontroller 自带的addChildViewController
         
 
 上面两种方法都没用，这里我用的是UIPageViewController，感觉还不错
